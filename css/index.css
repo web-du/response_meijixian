@@ -20,6 +20,13 @@
 .B {
   font-weight: bold;
 }
+.dfc {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  align-items: center;
+}
 /**定义背景颜色函数**/
 /**定义css3函数**/
 .header {
@@ -37,6 +44,20 @@
   left: 0;
   top: 0;
   z-index: 9;
+}
+.header .con {
+  width: 14rem;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  align-items: center;
+}
+.header .con .logo-box .logo {
+  display: block;
+  width: 1.49rem;
 }
 .index-banner .banner {
   display: block;

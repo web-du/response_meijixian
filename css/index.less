@@ -25,6 +25,13 @@
 .B{
     font-weight: bold;
 }
+.dfc{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    align-items: center;
+}
 /**定义背景颜色函数**/
 .bg(@color){
     background-color: @color;
@@ -55,6 +62,18 @@
     left: 0;
     top: 0;
     z-index: 9;
+    .con{
+        width: 14rem;
+        height: 100%;
+        margin: 0 auto;
+        .dfc;
+        .logo-box{
+            .logo{
+                .db;
+                width: 1.49rem;
+            }
+        }
+    }
 }
 .index-banner{
     .banner{
