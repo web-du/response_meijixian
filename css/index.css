@@ -1,0 +1,58 @@
+/**定义全局样式**/
+.pr {
+  position: relative;
+}
+.pa {
+  position: absolute;
+}
+.pf {
+  position: fixed;
+}
+.db {
+  display: block;
+}
+.dn {
+  display: none;
+}
+.dib {
+  display: inline-block;
+}
+.B {
+  font-weight: bold;
+}
+/**定义背景颜色函数**/
+/**定义css3函数**/
+.header {
+  background: #000;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+  /*FireFox*/
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+  /* Opear */
+  background: -ms-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+  /*IE10及IE10+*/
+  height: 0.9rem;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
+.index-banner .banner {
+  display: block;
+  width: 100%;
+}
+.index-banner .swiper-pagination {
+  bottom: 0.2rem;
+}
+.index-banner .swiper-pagination-bullet {
+  width: 0.23rem;
+  height: 0.04rem;
+  background-color: #ffffff;
+  border-radius: 0;
+  opacity: 1;
+}
+.index-banner .swiper-pagination-bullet-active {
+  background-color: #b41d24;
+  opacity: 1;
+}

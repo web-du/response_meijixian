@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>美际线</title>
+    <meta name="keywords" content="美际线" />
+    <meta name="description" content="美际线" />
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-4.2.2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/index.css" />
+    <!--[if IE 7]>
+    <link type="text/css" rel="stylesheet" href="css/ie7.css" />
+    <![endif]-->
+</head>
+<body>
+
+<!--header开始-->
+<div class="header">
+</div>
+<!--header结束-->
+
+<!--content开始-->
+<div class="content">
+    <!-- banner -->
+    <div class='index-banner'>
+        <div class='swiper-container'>
+            <div class='swiper-wrapper'>
+                <div class='swiper-slide'>
+                    <img src="images/banner.jpg" class='banner'>
+                </div>
+                <div class='swiper-slide'>
+                    <img src="images/banner.jpg" class='banner'>
+                </div>
+                <div class='swiper-slide'>
+                    <img src="images/banner.jpg" class='banner'>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    
+</div>
+<!--content结束-->
+
+<!--footer开始-->
+<div class="footer">
+</div>
+<!--footer结束-->
+
+
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/swiper-4.2.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/public.js"></script>
+<script type="text/javascript">
+ //JS代码部分
+ $(function(){
+     //banner
+     var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+ })
+
+</script>
+
+
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+<script type="text/javascript">
+    DD_belatedPNG.fix(".");
+</script>
+<![Endif]-->
+</body>
+</html>

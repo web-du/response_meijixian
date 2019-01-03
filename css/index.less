@@ -1,0 +1,78 @@
+/**定义全局样式**/
+@fc:#333333;
+@mc:#666666;
+@sc:#999999;
+@nc:#b41d24;
+@wc:#ffffff;
+.pr{
+    position: relative;
+}
+.pa{
+    position: absolute;
+}
+.pf{
+    position: fixed;
+}
+.db{
+    display: block;
+}
+.dn{
+    display: none;
+}
+.dib{
+    display: inline-block;
+}
+.B{
+    font-weight: bold;
+}
+/**定义背景颜色函数**/
+.bg(@color){
+    background-color: @color;
+}
+/**定义css3函数**/
+.trans(@lx,@time,@fx,@yc){
+    transition: @lx @time @fx @yc;
+    -webkit-transition: @lx @time @fx @yc;
+    -moz-transition: @lx @time @fx @yc;
+    -ms-transition: @lx @time @fx @yc;
+}
+.tran(@sx){
+    transform: @sx;
+    -webkit-transform: @sx;
+    -moz-transform: @sx;
+    -ms-transform: @sx;
+}
+
+.header{
+    background: #000;
+    background: -webkit-linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4));
+    background: -moz-linear-gradient(top,rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.4) 100%);; /*FireFox*/
+    background: -o-linear-gradient(top,rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.4) 100%);  /* Opear */
+    background: -ms-linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)); /*IE10及IE10+*/
+    height: 0.9rem;
+    width: 100%;
+    .pf;
+    left: 0;
+    top: 0;
+    z-index: 9;
+}
+.index-banner{
+    .banner{
+        .db;
+        width: 100%;
+    }
+    .swiper-pagination{
+        bottom:0.2rem;
+    }
+    .swiper-pagination-bullet{
+        width:0.23rem;
+        height: 0.04rem;
+        .bg(@wc);
+        border-radius:0;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active{
+        .bg(@nc);
+        opacity: 1;
+    }
+}
