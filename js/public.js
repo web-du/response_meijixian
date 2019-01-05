@@ -20,3 +20,11 @@ if(swc == 0){
 }
 
 document.documentElement.style.fontSize = swc / 19.2 + "px";
+
+
+$(function(){
+    //头部搜索按钮
+    $(".header .search-img").click(function(){
+        $(".header .search-con").stop(true).slideToggle('fast');
+    })
+})

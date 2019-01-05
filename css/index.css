@@ -27,6 +27,22 @@
   display: -ms-flex;
   align-items: center;
 }
+.dfcs {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dfcc {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  align-items: center;
+  justify-content: center;
+}
 /**定义背景颜色函数**/
 /**定义css3函数**/
 .header {
@@ -54,10 +70,56 @@
   display: -moz-flex;
   display: -ms-flex;
   align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 .header .con .logo-box .logo {
   display: block;
   width: 1.49rem;
+}
+.header .con .nav-search > ul > li {
+  margin-right: 0.6rem;
+}
+.header .con .nav-search > ul > li a {
+  color: #fefefe;
+  font-size: 16px;
+}
+.header .con .nav-search .search-box {
+  margin-top: 1px;
+  cursor: pointer;
+}
+.header .con .nav-search .search-box .search-con {
+  position: absolute;
+  width: 4.5rem;
+  right: 0;
+  top: 0.9rem;
+  background-color: #ffffff;
+  padding: 0.15rem;
+  display: none;
+}
+.header .con .nav-search .search-box .search-con input {
+  display: inline-block;
+  width: 75%;
+  height: 40px;
+  color: #000000;
+  font-size: 13px;
+  padding: 6px 12px;
+  line-height: 1;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+}
+.header .con .nav-search .search-box .search-con .sure {
+  display: inline-block;
+  width: 20%;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 3%;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: #b41d24;
+  font-size: 14px;
 }
 .index-banner .banner {
   display: block;
@@ -76,4 +138,301 @@
 .index-banner .swiper-pagination-bullet-active {
   background-color: #b41d24;
   opacity: 1;
+}
+.index-customized {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 0.5rem;
+  padding-bottom: 2.35rem;
+}
+.index-customized .con-box {
+  width: 14rem;
+  margin: 0 auto;
+}
+.index-customized .con-box .title {
+  text-align: center;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.index-customized .con-box .title:before {
+  position: absolute;
+  content: '';
+  width: 1.6rem;
+  height: 1px;
+  background-color: #b41d24;
+  left: 50%;
+  bottom: -0.2rem;
+  margin-left: -0.8rem;
+  z-index: 3;
+}
+.index-customized .con-box .title em {
+  font-size: 35px;
+  color: #b41d24;
+  text-transform: uppercase;
+  line-height: 35px;
+  margin-right: 0.14rem;
+  margin-top: 4px;
+}
+.index-customized .con-box .title span {
+  font-size: 30px;
+  color: #ffffff;
+  line-height: 35px;
+}
+.index-customized .con-box > p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  max-width: 8.85rem;
+  margin: 0.35rem auto 0;
+}
+.index-customized .con-box .more {
+  display: block;
+  width: 1.6rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  border: 1px solid #ffffff;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0.2rem auto;
+  transition: background-color 0.3s ease 0s;
+  -webkit-transition: background-color 0.3s ease 0s;
+  -moz-transition: background-color 0.3s ease 0s;
+  -ms-transition: background-color 0.3s ease 0s;
+}
+.index-customized .con-box .more:hover {
+  background-color: #b41d24;
+  border-color: #b41d24;
+}
+.index-customized .con-box .list {
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+}
+.index-customized .con-box .list li {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  width: 25%;
+  height: 2.2rem;
+  background-color: rgba(51, 51, 51, 0.8);
+  transition: background-color 0.3s ease 0s;
+  -webkit-transition: background-color 0.3s ease 0s;
+  -moz-transition: background-color 0.3s ease 0s;
+  -ms-transition: background-color 0.3s ease 0s;
+}
+.index-customized .con-box .list li:hover {
+  background-color: #b41d24;
+}
+.index-customized .con-box .list li:hover h4:before {
+  background-color: #ffffff;
+}
+.index-customized .con-box .list li img {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  margin: 0.3rem auto 0.12rem;
+  border: 2px solid #b41d24;
+}
+.index-customized .con-box .list li h4 {
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0.15rem;
+}
+.index-customized .con-box .list li h4:before {
+  content: '';
+  width: 2.78rem;
+  height: 1px;
+  background-color: #747474;
+  position: absolute;
+  left: 50%;
+  bottom: -0.08rem;
+  margin-left: -1.39rem;
+  z-index: 2;
+}
+.index-customized .con-box .list li p {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 30px;
+  text-align: center;
+}
+.index-case {
+  position: relative;
+}
+.index-case .top-box {
+  position: absolute;
+  top: -1.8rem;
+  width: 100%;
+  left: 0;
+  text-align: center;
+}
+.index-case .top-box .title {
+  text-align: center;
+}
+.index-case .top-box .title h2 {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  align-items: center;
+  justify-content: center;
+}
+.index-case .top-box .title h2 em {
+  font-size: 35px;
+  line-height: 55px;
+  color: #b41d24;
+  margin-right: 0.1rem;
+  text-transform: uppercase;
+}
+.index-case .top-box .title h2 span {
+  font-size: 30px;
+  color: #ffffff;
+}
+.index-case .top-box .title p {
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  color: #ffffff;
+  display: inline-block;
+  padding: 0 0.83rem;
+}
+.index-case .top-box .title p:before {
+  width: 0.68rem;
+  height: 1px;
+  content: '';
+  background-color: #b41d24;
+  left: 0;
+  top: 50%;
+  z-index: 2;
+  position: absolute;
+}
+.index-case .top-box .title p:after {
+  width: 0.68rem;
+  height: 1px;
+  content: '';
+  background-color: #b41d24;
+  right: 0;
+  top: 50%;
+  z-index: 2;
+  position: absolute;
+}
+.index-case .top-box .tab {
+  display: inline-block;
+  border-top: 1px solid #555;
+  border-left: 1px solid #555;
+  margin-top: 0.3rem;
+}
+.index-case .top-box .tab li {
+  width: 1.6rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  border-right: 1px solid #555;
+  border-bottom: 1px solid #555;
+  float: left;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #000000;
+  transition: background-color 0.3s ease 0s;
+  -webkit-transition: background-color 0.3s ease 0s;
+  -moz-transition: background-color 0.3s ease 0s;
+  -ms-transition: background-color 0.3s ease 0s;
+  cursor: pointer;
+}
+.index-case .top-box .tab li:hover,
+.index-case .top-box .tab li.on {
+  background-color: #b41d24;
+  border-color: #b41d24;
+}
+.index-case .list {
+  position: relative;
+}
+.index-case .list:after {
+  content: '';
+  width: 0px;
+  height: 0px;
+  vertical-align: middle;
+  border-top: 0.17rem solid;
+  border-right: 0.17rem solid transparent;
+  border-left: 0.17rem solid transparent;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-left: -0.16rem;
+}
+.index-case .list > li {
+  border-top: 0.04rem solid #000;
+  border-left: 0.04rem solid #000;
+}
+.index-case .list > li ul {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.index-case .list > li ul li {
+  position: relative;
+  border-right: 0.04rem solid #000;
+  border-bottom: 0.04rem solid #000;
+  overflow: hidden;
+  cursor: pointer;
+}
+.index-case .list > li ul li:hover p {
+  bottom: -0.01rem;
+}
+.index-case .list > li ul li:hover img {
+  transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+}
+.index-case .list > li ul li:nth-child(1),
+.index-case .list > li ul li:nth-child(3) {
+  width: 4.78rem;
+  height: 5.6rem;
+}
+.index-case .list > li ul li:nth-child(2) {
+  width: 9.6rem;
+  height: 5.6rem;
+}
+.index-case .list > li ul li:nth-child(n+4) {
+  width: 25%;
+  height: 3.2rem;
+}
+.index-case .list > li ul li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease 0s;
+  -webkit-transition: transform 0.3s ease 0s;
+  -moz-transition: transform 0.3s ease 0s;
+  -ms-transition: transform 0.3s ease 0s;
+}
+.index-case .list > li ul li p {
+  position: absolute;
+  width: 100%;
+  height: 0.65rem;
+  line-height: 0.65rem;
+  text-align: center;
+  background-color: rgba(179, 30, 35, 0.9);
+  font-size: 18px;
+  color: #ffffff;
+  left: 0;
+  bottom: -100%;
+  transition: bottom 0.3s ease 0s;
+  -webkit-transition: bottom 0.3s ease 0s;
+  -moz-transition: bottom 0.3s ease 0s;
+  -ms-transition: bottom 0.3s ease 0s;
 }
