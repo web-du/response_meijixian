@@ -268,6 +268,7 @@
 }
 .index-case {
   position: relative;
+  margin-bottom: 0.8rem;
 }
 .index-case .top-box {
   position: absolute;
@@ -435,4 +436,164 @@
   -webkit-transition: bottom 0.3s ease 0s;
   -moz-transition: bottom 0.3s ease 0s;
   -ms-transition: bottom 0.3s ease 0s;
+}
+.index-product .title {
+  text-align: center;
+  margin-bottom: 0.24rem;
+}
+.index-product .title span {
+  position: relative;
+  padding: 0 0.8rem;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #333333;
+}
+.index-product .title span:before,
+.index-product .title span:after {
+  content: '';
+  position: absolute;
+  width: 0.68rem;
+  height: 1px;
+  background-color: #b41d24;
+  left: 0;
+  top: 50%;
+}
+.index-product .title span:after {
+  left: auto;
+  right: 0;
+}
+.index-product .swiper-container {
+  padding-bottom: 0.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.index-product .swiper-container .swiper-slide .product-box {
+  position: relative;
+}
+.index-product .swiper-container .swiper-slide .product-box:hover > img {
+  -webkit-filter: blur(0px);
+  /* Chrome, Opera */
+  -moz-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
+}
+.index-product .swiper-container .swiper-slide .product-box:hover .to {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.index-product .swiper-container .swiper-slide .product-box:hover .to h1 {
+  background-color: #b41d24;
+  margin-top: 1.2rem;
+}
+.index-product .swiper-container .swiper-slide .product-box:hover .to h1:after {
+  background-color: #b41d24;
+}
+.index-product .swiper-container .swiper-slide .product-box:hover .to img.show {
+  display: none;
+}
+.index-product .swiper-container .swiper-slide .product-box:hover .to img.hide {
+  display: block;
+}
+.index-product .swiper-container .swiper-slide .product-box > img {
+  display: block;
+  width: 100%;
+  -webkit-filter: blur(2px);
+  /* Chrome, Opera */
+  -moz-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+.index-product .swiper-container .swiper-slide .product-box .to {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  left: 0;
+  top: 0;
+}
+.index-product .swiper-container .swiper-slide .product-box .to a {
+  display: block;
+  height: 100%;
+}
+.index-product .swiper-container .swiper-slide .product-box .to h1 {
+  width: 0.97rem;
+  height: 0.97rem;
+  text-align: center;
+  line-height: 0.97rem;
+  color: #ffffff;
+  font-size: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  margin-bottom: 0.55rem;
+  margin-top: 1.7rem;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+}
+.index-product .swiper-container .swiper-slide .product-box .to h1:after {
+  content: '';
+  position: absolute;
+  width: 0.64rem;
+  height: 2px;
+  background-color: #ffffff;
+  left: 50%;
+  margin-left: -0.32rem;
+  bottom: -0.2rem;
+}
+.index-product .swiper-container .swiper-slide .product-box .to h6 {
+  font-size: 32px;
+  line-height: 50px;
+  color: #ffffff;
+  padding-left: 0.18rem;
+  text-transform: uppercase;
+}
+.index-product .swiper-container .swiper-slide .product-box .to p {
+  font-size: 24px;
+  height: 50px;
+  color: #ffffff;
+  padding-left: 0.18rem;
+}
+.index-product .swiper-container .swiper-slide .product-box .to img {
+  display: block;
+  width: 0.39rem;
+  height: 0.39rem;
+  border-radius: 50%;
+  margin-left: 0.18rem;
+  margin-top: 0.5rem;
+}
+.index-product .swiper-container .swiper-slide .product-box .to img.hide {
+  display: none;
+}
+.index-product .swiper-container .product-op {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.16rem 0 1rem;
+}
+.index-product .swiper-container .swiper-pagination {
+  position: static;
+  margin: 0 0.98rem;
+}
+.index-product .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  background-color: #ffffff;
+  opacity: 1;
+  margin-right: 0.15rem;
+}
+.index-product .swiper-container .swiper-pagination .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+.index-product .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #b41d24;
+}
+.index-product .swiper-container .swiper-button-next,
+.index-product .swiper-container .swiper-button-prev {
+  position: static;
+  margin-top: 0;
+  background-size: cover;
+  width: 0.16rem;
+  height: 0.31rem;
 }
