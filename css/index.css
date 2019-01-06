@@ -514,6 +514,7 @@
 .index-product .swiper-container .swiper-slide .product-box .to a {
   display: block;
   height: 100%;
+  overflow: hidden;
 }
 .index-product .swiper-container .swiper-slide .product-box .to h1 {
   width: 0.97rem;
