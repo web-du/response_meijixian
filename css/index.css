@@ -86,7 +86,6 @@
   width: 0.42rem;
   background-color: #b41d24;
   z-index: 3;
-  left: 0;
   bottom: -0.12rem;
   content: '';
   transition: all 0.5s ease 0s;
