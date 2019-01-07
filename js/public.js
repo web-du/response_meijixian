@@ -27,4 +27,9 @@ $(function(){
     $(".header .search-img").click(function(){
         $(".header .search-con").stop(true).slideToggle('fast');
     })
+
+    //鼠标移动
+    $(".header .con .nav-search > ul > li").hover(function (event) { 
+        console.log($(this).offsetTop);
+    })
 })
