@@ -167,12 +167,14 @@
   background-color: #b41d24;
   opacity: 1;
 }
-.index-customized {
+.index-big-ground {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+.index-customized {
   padding-top: 0.5rem;
-  padding-bottom: 2.35rem;
+  padding-bottom: 0.7rem;
 }
 .index-customized .con-box {
   width: 14rem;
@@ -299,10 +301,6 @@
   margin-bottom: 0.8rem;
 }
 .index-case .top-box {
-  position: absolute;
-  top: -1.8rem;
-  width: 100%;
-  left: 0;
   text-align: center;
 }
 .index-case .top-box .title {
@@ -360,6 +358,7 @@
   border-top: 1px solid #555;
   border-left: 1px solid #555;
   margin-top: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 .index-case .top-box .tab li {
   width: 1.6rem;
@@ -1252,6 +1251,13 @@
   .index-partner .con-box .partner-box .to a {
     font-size: 14px;
   }
+  .index-partner .con-box .partner-box .parter .swiper-button-next,
+  .index-partner .con-box .partner-box .parter .swiper-button-prev {
+    margin-top: -40px;
+    width: 20px;
+    height: 30px;
+    background-size: cover;
+  }
   .footer .con-box .footer-nav .ewm {
     margin-right: 0;
   }
@@ -1383,6 +1389,9 @@
   .header .con .nav-search > ul {
     display: none;
   }
+  .header .con .nav-search .search-box .search-con {
+    width: 100%;
+  }
   .header .con .logo-box .logo {
     width: 80px;
   }
@@ -1391,5 +1400,51 @@
     position: relative;
     right: 0;
     top: 0;
+  }
+  .index-customized .con-box .list {
+    display: none;
+  }
+  .index-customized .con-box .title em {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .index-customized .con-box .title span {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .index-customized .con-box > p {
+    max-width: 90%;
+  }
+  .index-case .top-box {
+    top: -100px;
+  }
+  .index-case .top-box .title h2 em {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .index-case .top-box .title h2 span {
+    font-size: 18px;
+  }
+  .index-case .top-box .title p {
+    font-size: 14px;
+  }
+  .index-case .top-box .tab li {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .index-case .list > li ul {
+    justify-content: center;
+  }
+  .index-case .list > li ul li:nth-child(n+4) {
+    order: 3;
+  }
+  .index-case .list > li ul li:nth-child(n+6) {
+    display: none;
+  }
+  .index-case .list > li ul li:nth-child(1),
+  .index-case .list > li ul li:nth-child(3) {
+    order: 1;
   }
 }
