@@ -33,6 +33,10 @@ $(function(){
     $(".header .search-img").click(function(){
         $(".header .search-con").stop(true).slideToggle('fast');
     });
+    $('.search-con .sure').click(function(){ 
+        $(".header .search-con").stop(true).slideToggle('fast');
+    })
+
 
     //鼠标移动
     var fW = (function(){
@@ -60,5 +64,21 @@ $(function(){
         setTimeout(function(){
             moveObj.css({'left':nowIndexL.l,'width':nowIndexL.w});
         },150)
+    })
+
+
+
+    //返回顶部
+    $(".Totop").hide();
+    $(window).scroll(function(){
+        if($(this).scrollTop()>300){
+            $(".Totop").show();
+        }else{
+            $(".Totop").hide();
+        }
+    })
+    $(".Totop").click(function(){
+        $('html,body').animate({
+            scrollTop:0},300);
     })
 })

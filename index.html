@@ -9,6 +9,7 @@
     <meta name="description" content="美际线" />
     <link rel="stylesheet" type="text/css" href="css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/swiper.css">
+    <link rel="stylesheet" href="css/common.css">
     <link type="text/css" rel="stylesheet" href="css/base.css" />
     <link type="text/css" rel="stylesheet" href="css/index.css" />
     <style>
@@ -44,29 +45,85 @@
                 <img src="images/logo.png" class='logo'>
             </a>
         </div>
-        <div class='nav-search clearfix'>
-            <ul class='fl clearfix'>
-                <li class='fl'><a href='#' class='on'>首页</a></li>
-                <li class='fl'><a href='#'>关于我们</a></li>
-                <li class='fl'><a href='#'>核心团队</a></li>
-                <li class='fl'><a href='#'>案例展示</a></li>
-                <li class='fl'><a href='#'>服务内容</a></li>
-                <li class='fl'><a href='#'>新闻资讯</a></li>
-                <li class='fl'><a href='#'>联系我们</a></li>
-                <li class='fl'><a href='#'>商学院</a></li>
-                <i class='move'></i>
-            </ul>
-            <div class='fr search-box'>
-                <img src="images/search.png" class='search-img'>
-                <div class='search-con'>
-                    <input type="text" class='input' placeholder="请输入要搜索的内容">
-                    <span class='sure'>搜索</span>
+        <div class='right'>
+            <div class='nav-search clearfix'>
+                <ul class='fl clearfix'>
+                    <li class='fl'><a href='#' class='on'>首页</a></li>
+                    <li class='fl'><a href='#'>关于我们</a></li>
+                    <li class='fl'><a href='#'>核心团队</a></li>
+                    <li class='fl'><a href='#'>案例展示</a></li>
+                    <li class='fl'><a href='#'>服务内容</a></li>
+                    <li class='fl'><a href='#'>新闻资讯</a></li>
+                    <li class='fl'><a href='#'>联系我们</a></li>
+                    <li class='fl'><a href='#'>商学院</a></li>
+                    <i class='move'></i>
+                </ul>
+                
+                <div class='fr search-box'>
+                    <img src="images/search.png" class='search-img'>
+                    <div class='search-con'>
+                        <input type="text" class='input' placeholder="请输入要搜索的内容">
+                        <span class='sure'>搜索</span>
+                    </div>
                 </div>
+    
             </div>
-
+            <div class="menu-handler fr">
+                <span class="burger burger-1 trans" style="background: rgb(255, 255, 255);"></span>
+                <span class="burger burger-2 trans-fast" style="background: rgb(255, 255, 255);"></span>
+                <span class="burger burger-3 trans" style="background: rgb(255, 255, 255);"></span>
+            </div>
         </div>
+        
     </div>
+    
+    
 </div>
+
+<div class="menuBox" style="display: none; top: -100%;">
+        <dl class="navMobile">
+            <dd>
+                <p>
+                    <a href="/">首页</a>
+                </p>
+            </dd>
+            <dd>
+                <p>
+                    <a href="#">关于我们</a>
+                </p>
+            </dd>
+            <dd>
+                <p>
+                    <a href="#">核心团队</a>
+                </p>
+            </dd>
+            <dd>
+                <p>
+                    <a href="#">案例展示</a>
+                </p>
+            </dd>
+            <dd>
+                <p>
+                    <a href="#">服务内容</a>
+                </p>
+            </dd>
+            <dd>
+                <p>
+                    <a href="#">新闻资讯</a>
+                </p>
+            </dd>
+            <dd>
+                <p>
+                    <a href="#">联系我们</a>
+                </p>
+            </dd>
+            <dd>
+                <p>
+                    <a href="#">商学院</a>
+                </p>
+            </dd>    
+        </dl>
+    </div>
 <!--header结束-->
 
 <!--content开始-->
@@ -742,6 +799,11 @@
 </div>
 <!--content结束-->
 
+<!-- 返回顶部 -->
+<div class='Totop'>
+    <img src="images/to-top.png" >
+</div>
+
 <!--footer开始-->
 <div class="footer" style='background-image:url("images/img-41.jpg");'>
     <div class='con-box'>
@@ -827,6 +889,8 @@
 
 <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript" src="js/swiper.js"></script>
+<script src="js/modernizr-1.6.min.js"></script>
+<script src="js/page.js"></script>
 <script src="js/public.js"></script>
 <script type="text/javascript">
 //JS代码部分
