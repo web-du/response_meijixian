@@ -935,8 +935,8 @@ $(function(){
             480: { 
             slidesPerView: 2,
             },
-            //当宽度小于等于640
-            640: {
+            //当宽度小于等于1023
+            1023: {
             slidesPerView: 3,
             }
         }
@@ -993,6 +993,21 @@ $(function(){
             nextEl: '.parter-next',
             prevEl: '.parter-prev',
         },
+        breakpoints: { 
+            //当宽度小于等于320
+            320: {
+            slidesPerView: 1,
+            },
+            //当宽度小于等于480
+            480: { 
+            slidesPerView: 2,
+            },
+            //当宽度小于等于767
+            767: {
+                slidesPerView: 3,
+                slidesPerColumn: 1,
+            }
+        }
     });
 })
 

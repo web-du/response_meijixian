@@ -1622,20 +1622,125 @@
         }
         .list{
             >li{
+                border:none;
                 ul{
                     justify-content: center;
                     li:nth-child(n+4){
                         order:3;
+                        width:40%;
+                        height: auto;
                     }
                     li:nth-child(n+6){
                         .dn;
                     }
                     li:nth-child(1),li:nth-child(3){
                         order: 1;
+                        width: 40%;
+                        height: auto;
+                    }
+                    li:nth-child(2){
+                        width: 80%;
+                        height: auto;
+                    }
+                    li{
+                        p{
+                            line-height: 35px;
+                            height: 35px;
+                        }
                     }
                 }
             }
         }
+    }
+    .index-team{
+        .con-box{
+            top: 0;
+            .gallery-thumbs{
+                .dn;
+            }
+            .gallery-top{
+                .swiper-wrapper{
+                    .img-box{
+                        a{
+                            .details{
+                                .to-op{
+                                    .dn;
+                                }
+                            }
+                        }
+                    }
+                }
+                .swiper-button-next,.swiper-button-prev{
+                    width: 16px;
+                    height: 26px;
+                    background-size: cover;
+                }
+            }
+        }
+        .swiper-box{
+            height: 5.5rem;
+        }
+    }
+    .index-partner{
+        height: 7.77rem;
+        .con-box{
+            .news-box{
+                .title{
+                    em{
+                        font-size: 20px;
+                    }
+                    span{
+                        font-size: 18px;
+                    }
+                }
+                .nav{
+                    li{
+                        width: 80px;
+                    }
+                }
+                .details{
+                    >li{
+                        .list{
+                            li{
+                                padding: 10px 0;
+                                a{
+                                    >img{
+                                        width: 90px;
+                                    }
+                                    .time{
+                                        .text{
+                                            flex-grow: 0;
+                                            width: 80%;
+                                            p{
+                                                line-height: 20px;
+                                            }
+                                        }
+                                        .date{
+                                            width: 20%;
+                                            &:before{
+                                                height: 1.2rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .partner-box{
+                .parter{
+                    .swiper-button-next,.swiper-button-prev{
+                        .dn;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        .con-box{
+            .dn;
+        }  
     }
 }
 @media(max-width:991px){
@@ -1646,7 +1751,166 @@
 }
 
 @media(max-width:767px){
-
+    .header{
+        .con{
+            width: 90%;
+        }
+    }
+    .menu-handler .burger{
+        left: auto;
+        right:0;
+    }
+    .index-customized{
+        .con-box{
+            width: 90%;
+            >p{
+                line-height: 25px;
+            }
+        }
+    }
+    .index-case{
+        .list{
+            >li{
+                ul{
+                    li{
+                        &:nth-child(2){
+                            width: 90%;
+                        }
+                        &:nth-child(1),&:nth-child(3){
+                            width: 45%;
+                        }
+                        &:nth-child(n+4){
+                            width: 45%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .index-product{
+        .swiper-container{
+            .swiper-slide{
+                .product-box{
+                    .to{
+                        h1{
+                            width: 50px;
+                            height: 50px;
+                            line-height: 50px;
+                            font-size: 20px;
+                            margin-bottom: 0.8rem;
+                            &:after{
+                                width: 1.64rem;
+                                margin-left: -0.82rem;
+                                bottom: -0.5rem;
+                            }
+                        }
+                        h6{
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                        p{
+                            height: 35px;
+                            line-height: 35px;
+                        }
+                        img{
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .index-team{
+        .con-box{
+            width: 100%;
+            left: 0;
+            margin-left: 0;
+            .gallery-top{
+                .swiper-wrapper{
+                    width: 100%;
+                    .img-box{
+                        a{
+                            align-items: flex-start;
+                            .details{
+                                .name{
+                                    h2{
+                                        font-size: 16px;
+                                        line-height: 25px;
+                                        margin-bottom: 0.4rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .index-partner{
+        height:400px;
+        .con-box{
+            width: 90%;
+            .news-box{
+                .details{
+                    >li{
+                        .list{
+                            li{
+                                padding: 8px;
+                                a{
+                                    >img{
+                                        .dn;
+                                    }
+                                    .time{
+                                        flex-grow: 0;
+                                        width: 100%;
+                                        .text{
+                                            width: 100%;
+                                        }
+                                        .date{
+                                            .dn;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .partner-box{
+                .parter{
+                    height: auto;
+                    .swiper-container{
+                        .swiper-slide{
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        .swiper-pagination{
+                            bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        .copyright{
+            height: 35px;
+            line-height: 35px;
+        }
+    }
+    .Totop{
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        img{
+            width: 50px;
+            height: 50px;
+        } 
+    }   
 
 }
 @media(max-width:640px){

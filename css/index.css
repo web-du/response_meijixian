@@ -1434,11 +1434,16 @@
     line-height: 30px;
     font-size: 14px;
   }
+  .index-case .list > li {
+    border: none;
+  }
   .index-case .list > li ul {
     justify-content: center;
   }
   .index-case .list > li ul li:nth-child(n+4) {
     order: 3;
+    width: 40%;
+    height: auto;
   }
   .index-case .list > li ul li:nth-child(n+6) {
     display: none;
@@ -1446,5 +1451,182 @@
   .index-case .list > li ul li:nth-child(1),
   .index-case .list > li ul li:nth-child(3) {
     order: 1;
+    width: 40%;
+    height: auto;
+  }
+  .index-case .list > li ul li:nth-child(2) {
+    width: 80%;
+    height: auto;
+  }
+  .index-case .list > li ul li p {
+    line-height: 35px;
+    height: 35px;
+  }
+  .index-team .con-box {
+    top: 0;
+  }
+  .index-team .con-box .gallery-thumbs {
+    display: none;
+  }
+  .index-team .con-box .gallery-top .swiper-wrapper .img-box a .details .to-op {
+    display: none;
+  }
+  .index-team .con-box .gallery-top .swiper-button-next,
+  .index-team .con-box .gallery-top .swiper-button-prev {
+    width: 16px;
+    height: 26px;
+    background-size: cover;
+  }
+  .index-team .swiper-box {
+    height: 5.5rem;
+  }
+  .index-partner {
+    height: 7.77rem;
+  }
+  .index-partner .con-box .news-box .title em {
+    font-size: 20px;
+  }
+  .index-partner .con-box .news-box .title span {
+    font-size: 18px;
+  }
+  .index-partner .con-box .news-box .nav li {
+    width: 80px;
+  }
+  .index-partner .con-box .news-box .details > li .list li {
+    padding: 10px 0;
+  }
+  .index-partner .con-box .news-box .details > li .list li a > img {
+    width: 90px;
+  }
+  .index-partner .con-box .news-box .details > li .list li a .time .text {
+    flex-grow: 0;
+    width: 80%;
+  }
+  .index-partner .con-box .news-box .details > li .list li a .time .text p {
+    line-height: 20px;
+  }
+  .index-partner .con-box .news-box .details > li .list li a .time .date {
+    width: 20%;
+  }
+  .index-partner .con-box .news-box .details > li .list li a .time .date:before {
+    height: 1.2rem;
+  }
+  .index-partner .con-box .partner-box .parter .swiper-button-next,
+  .index-partner .con-box .partner-box .parter .swiper-button-prev {
+    display: none;
+  }
+  .footer .con-box {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .header .con {
+    width: 90%;
+  }
+  .menu-handler .burger {
+    left: auto;
+    right: 0;
+  }
+  .index-customized .con-box {
+    width: 90%;
+  }
+  .index-customized .con-box > p {
+    line-height: 25px;
+  }
+  .index-case .list > li ul li:nth-child(2) {
+    width: 90%;
+  }
+  .index-case .list > li ul li:nth-child(1),
+  .index-case .list > li ul li:nth-child(3) {
+    width: 45%;
+  }
+  .index-case .list > li ul li:nth-child(n+4) {
+    width: 45%;
+  }
+  .index-product .swiper-container .swiper-slide .product-box .to h1 {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    margin-bottom: 0.8rem;
+  }
+  .index-product .swiper-container .swiper-slide .product-box .to h1:after {
+    width: 1.64rem;
+    margin-left: -0.82rem;
+    bottom: -0.5rem;
+  }
+  .index-product .swiper-container .swiper-slide .product-box .to h6 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .index-product .swiper-container .swiper-slide .product-box .to p {
+    height: 35px;
+    line-height: 35px;
+  }
+  .index-product .swiper-container .swiper-slide .product-box .to img {
+    width: 20px;
+    height: 20px;
+  }
+  .index-team .con-box {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+  .index-team .con-box .gallery-top .swiper-wrapper {
+    width: 100%;
+  }
+  .index-team .con-box .gallery-top .swiper-wrapper .img-box a {
+    align-items: flex-start;
+  }
+  .index-team .con-box .gallery-top .swiper-wrapper .img-box a .details .name h2 {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 0.4rem;
+  }
+  .index-partner {
+    height: 400px;
+  }
+  .index-partner .con-box {
+    width: 90%;
+  }
+  .index-partner .con-box .news-box .details > li .list li {
+    padding: 8px;
+  }
+  .index-partner .con-box .news-box .details > li .list li a > img {
+    display: none;
+  }
+  .index-partner .con-box .news-box .details > li .list li a .time {
+    flex-grow: 0;
+    width: 100%;
+  }
+  .index-partner .con-box .news-box .details > li .list li a .time .text {
+    width: 100%;
+  }
+  .index-partner .con-box .news-box .details > li .list li a .time .date {
+    display: none;
+  }
+  .index-partner .con-box .partner-box .parter {
+    height: auto;
+  }
+  .index-partner .con-box .partner-box .parter .swiper-container .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+  .index-partner .con-box .partner-box .parter .swiper-container .swiper-pagination {
+    bottom: 0;
+  }
+  .footer .copyright {
+    height: 35px;
+    line-height: 35px;
+  }
+  .Totop {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+  .Totop img {
+    width: 50px;
+    height: 50px;
   }
 }
