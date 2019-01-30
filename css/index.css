@@ -1186,6 +1186,299 @@
   height: 1rem;
   border-radius: 50%;
 }
+.sec-banner img {
+  width: 100%;
+  display: block;
+}
+/**商学院**/
+.business-school .understand {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0.8rem;
+}
+.business-school .understand .synopsis {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 11.75rem;
+  height: 2rem;
+  margin: 0 auto;
+  padding: 0.45rem;
+}
+.business-school .understand .synopsis .title {
+  text-align: center;
+  font-size: 0.3rem;
+  line-height: 0.38rem;
+  font-weight: bold;
+  color: #333333;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -0.2rem;
+  left: 0;
+  width: 100%;
+}
+.business-school .understand .synopsis .title em {
+  font-weight: bold;
+}
+.business-school .understand .synopsis .title span {
+  font-weight: bold;
+  color: #b41d24;
+}
+.business-school .understand .synopsis .con {
+  font-size: 0.18rem;
+  line-height: 0.38rem;
+}
+.business-school .understand .study .title {
+  text-align: center;
+  font-size: 0.3rem;
+  line-height: 0.38rem;
+  font-weight: bold;
+  color: #333333;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0.5rem 0 0.25rem;
+}
+.business-school .understand .study .title em {
+  font-weight: bold;
+  color: #b41d24;
+}
+.business-school .understand .study .title span {
+  font-weight: bold;
+  color: #b41d24;
+}
+.business-school .understand .study ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.business-school .understand .study ul li {
+  width: 25%;
+  height: 3.75rem;
+  overflow: hidden;
+  position: relative;
+}
+.business-school .understand .study ul li:hover img {
+  transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+}
+.business-school .understand .study ul li:hover p {
+  height: 1.05rem;
+  line-height: 1.05rem;
+  background-color: #b41e23;
+}
+.business-school .understand .study ul li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+}
+.business-school .understand .study ul li p {
+  position: absolute;
+  left: 50%;
+  margin-left: -2.2rem;
+  bottom: 0.2rem;
+  z-index: 3;
+  width: 4.4rem;
+  height: 0.66rem;
+  line-height: 0.66rem;
+  text-align: center;
+  font-size: 0.24rem;
+  color: #fff;
+  background-color: rgba(180, 30, 35, 0.7);
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+}
+.business-school .science {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0.75rem 0 0.85rem;
+  background-attachment: fixed;
+}
+.business-school .science .title {
+  text-align: center;
+  font-size: 0.3rem;
+  line-height: 0.38rem;
+  font-weight: bold;
+  color: #333333;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0.3rem;
+}
+.business-school .science .title em {
+  font-weight: bold;
+  color: #b41d24;
+}
+.business-school .science .title span {
+  font-weight: bold;
+  color: #b41d24;
+}
+.business-school .science ul {
+  width: 14rem;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.business-school .science ul li {
+  width: 4.62rem;
+  height: 1.97rem;
+  margin-right: 0.07rem;
+  margin-bottom: 0.07rem;
+  position: relative;
+}
+.business-school .science ul li:nth-child(3n+3) {
+  margin-right: 0;
+}
+.business-school .science ul li:hover a {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.business-school .science ul li:hover a:after {
+  position: absolute;
+  width: 4.15rem;
+  height: 1.5rem;
+  border: 1px solid #ffffff;
+  content: '';
+  left: 0.24rem;
+  top: 0.24rem;
+}
+.business-school .science ul li:hover a p {
+  opacity: 1;
+}
+.business-school .science ul li a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 0;
+  top: 0;
+  font-size: 0.24rem;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.business-school .science ul li a h4 {
+  line-height: 0.35rem;
+  font-weight: bold;
+}
+.business-school .science ul li a p {
+  line-height: 0.35rem;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+.business-school .science ul li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.business-school .major {
+  width: 14rem;
+  margin: 0 auto;
+  padding: 0.5rem 0 0.4rem;
+}
+.business-school .major .title {
+  text-align: center;
+  font-size: 0.3rem;
+  line-height: 0.38rem;
+  font-weight: bold;
+  color: #333333;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0.3rem;
+}
+.business-school .major .title em {
+  font-weight: bold;
+  color: #b41d24;
+}
+.business-school .major .title span {
+  font-weight: bold;
+  color: #b41d24;
+}
+.business-school .major .major-swiper .swiper-slide .img-box {
+  border: 1px solid #ddd;
+  padding-bottom: 0.35rem;
+  padding-top: 0.2rem;
+}
+.business-school .major .major-swiper .swiper-slide img {
+  display: block;
+  width: 2.85rem;
+  height: 2.85rem;
+  margin: 0 auto 0.15rem;
+}
+.business-school .major .major-swiper .swiper-slide h2 {
+  font-size: 0.2rem;
+  color: #333333;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.05rem;
+}
+.business-school .major .major-swiper .swiper-slide .label {
+  font-size: 0.16rem;
+  color: #666666;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-bottom: 0.15rem;
+}
+.business-school .major .major-swiper .swiper-slide p {
+  font-size: 0.16rem;
+  color: #333333;
+  line-height: 0.25rem;
+  width: 2.85rem;
+  margin: 0 auto;
+}
+.business-school .major .major-swiper .swiper-slide .op {
+  display: block;
+  width: 2.36rem;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  color: #ffffff;
+  background-color: #b41d24;
+  border-radius: 0.22rem;
+  margin: 0.2rem auto 0;
+  font-size: 0.16rem;
+  text-align: center;
+}
 @media (max-width: 1400px) {
   .index-customized .con-box .list li h4 {
     font-size: 16px;
