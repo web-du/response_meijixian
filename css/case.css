@@ -98,12 +98,13 @@
 .casebg3{ background: #f7f7f7; }
 .conbox1{ width: 14rem; margin: 0 auto; }
 .conbox1 h2{ padding-top: 0.48rem; padding-bottom: 0.4rem; font-size: 30px; line-height: 40px; color: #333; }
-.conbox1 h2 span{ font-weight: 600; }
-.conbox1 h2 span.re{ color: #b41e23; }
+.conbox1 h2 span.bl{ font-weight: 600; }
+.conbox1 h2 span.re{ color: #b41e23; font-weight: 600; }
 .per_conlfbot{ margin-bottom: 0.44rem; }
 .newslist1{ width: 100%; background: #fff; padding: 0.5rem 0; }
 .newslist1 ul.list1 li .pic,ul.list1 li .txt,ul.list1 li .date{ float: left; }
 .newslist1 ul.list1{ width: 93%; margin: 0 auto; }
+.newslist1 ul.list2{ width: 100%; margin: 0 auto; }
 .newslist1 ul.list1 li{ height: 2.1rem; overflow: hidden; margin-bottom: 0.3rem; box-sizing: border-box; border: 1px solid #ddd; }
 .newslist1 ul.list1 li:hover{ -moz-box-shadow:2px 2px 5px #ddd; -webkit-box-shadow:2px 2px 5px #ddd; box-shadow:2px 2px 5px #ddd; }
 .newslist1 ul.list1 li .pic{ margin-right: 3.22%; width: 22.27%; height: 2.1rem; overflow: hidden; }
@@ -231,17 +232,194 @@
 
 
 
+/* 核心团队详情 */
+.conbox1 .bl2{ float: left; font-size: 35px; line-height: 60px; color: #b31e23; text-transform: uppercase; margin-right: 0.11rem; }
+.conbox1 .re2{ float: left; font-size: 30px; line-height: 57px; color: #333; }
+.per_con .per_conlf .per_conlftop .txt ul.top li{ float: left; margin-right: 4%; width: 48%; font-size: 18px; line-height: 36px; color: #333; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.per_con .per_conlf .per_conlftop .txt ul.top li:nth-child(2n){ margin-right: 0; }
+.per_con .per_conlf .per_conlftop .txt ul.top li em{ font-size: 16px; line-height: 36px; color: #333; font-weight: 600; }
+.per_con .per_conlf .per_conlftop .txt ul.bot{ margin-top: 0.2rem; }
+.per_con .per_conlf .per_conlftop .txt ul.bot li{ float: left; width: 1.1rem; font-size: 18px; line-height: 28px; color: #333; text-align: center; margin-right: 0.5rem; }
+.per_con .per_conlf .per_conlftop .txt ul.bot li:nth-child(2n){ margin-right: 0; }
+.per_con .per_conlf .per_conlftop .txt ul.bot li .pic{ width: 1rem; height: 1rem; overflow: hidden; margin-left: 0.05rem; margin-right: 0; }
+.per_con .per_conlf .per_conlftop .txt ul.bot li .pic img{ width: 100%; height: 100%; display: block; }
+.per_conlfbot ul.abcase li{ float: left; width: 3.26rem; margin-right: 0.14rem; border-bottom: 1px solid #e0e0e0; }
+.per_conlfbot ul.abcase li:nth-child(3n){ margin-right: 0; }
+.per_conlfbot ul.abcase li .pic{ width: 100%; height: 2.18rem; overflow: hidden; }
+.per_conlfbot ul.abcase li .pic img{ width: 100%; height: 100%; display: block; transition: 1s; }
+.per_conlfbot ul.abcase li:hover .pic img{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+}
+.per_conlfbot ul.abcase li p{ font-size: 16px; line-height: 30px; color: #333; text-align: center; padding: 0 0.1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.per_conlfbot ul.abcase li:hover{ border-bottom: 1px solid #b31e23; }
+.per_conlfbot ul.abcase li:hover p{ color: #b31e23; }
+.per_conlf a.loadmore{ width: 100%; font-size: 14px; line-height: 28px; color: #666; text-transform: uppercase; text-align: center; display: block; margin: 0 auto; background: url(../images/jt_1.png) no-repeat 5.8rem center; margin-top: 0.3rem; }
+.per_conlf a.loadmore:hover{ color: #b31e23; background: url(../images/jt_2.png) no-repeat 5.8rem center; }
+.per_conlfbot2{ margin-bottom: 0; }
+
+/* 服务 */
+.casebg4{ background: url(../images/c_bg8.jpg) no-repeat; background-size: cover; }
+.conbox5{ width: 13.4rem; margin: 0 auto; }
+.con_box4{ width: 13.4rem; margin: -0.3rem auto 0; border-top: 1px solid #aaa; padding-top: 0.3rem; padding-bottom: 0.54rem; }
+.con_box4 h3{ display: flex; justify-content: center; }
+.con_box4 .bl3{ float: left; font-size: 35px; line-height: 35px; color: #b31e23; margin-right: 0.11rem; text-transform: uppercase; }
+.con_box4 .re3{ float: left; font-size: 30px; line-height: 30px; color: #333; font-weight: 600; }
+.con_box4 .line2{ width: 1.6rem; height: 1px; display: block; background: #b31e23; margin: 0.2rem auto; }
+.con_box4 p{ font-size: 18px; line-height: 30px; color: #333; text-align: center; }
+.sevicelist ul li.libg1{ background: url(../images/c_bg4.jpg) no-repeat; background-size: cover; padding-top: 0.5rem; }
+.sevicelist ul li.libg2{ background: #fff; padding-top: 0.5rem; }
+.sevicelist ul li.libg3{ background: url(../images/c_bg5.jpg) no-repeat; background-size: cover; padding-top: 0.5rem; }
+.sevicelist ul li.libg4{ background: url(../images/c_bg6.jpg) no-repeat; background-size: cover; padding-top: 0.5rem; }
+.sevicelist ul li .li_box{ width: 14rem; margin: 0 auto; background: url(../images/c_bg7.png) no-repeat left 0.23rem; background-size: contain; }
+.sevicelist ul li .li_box h4{ display: flex; justify-content: center; }
+.sevicelist ul li .li_box .bl4{ float: left; font-size: 0.35rem; line-height: 35px; color: #b31e23; margin-right: 0.11rem; text-transform: uppercase; }
+.sevicelist ul li .li_box .re4{ float: left; font-size: 0.3rem; line-height: 30px; color: #333; font-weight: 600; }
+.sevicelist ul li .li_box ul.l2{ display: flex; justify-content: center; margin-top: 0.52rem; margin-bottom: 0.58rem; }
+.sevicelist ul li .li_box ul.l2 li{ float: left; font-size: 18px; line-height: 20px; color: #333; padding-right: 0.3rem; margin-right: 0.3rem; border-right: 0.02rem solid #b63439; }
+.sevicelist ul li .li_box ul.l2 li:last-child{ margin-right: 0; padding-right: 0; border-right: none; }
+.sevicelist ul li .li_box ul.l3{ display: flex; justify-content: center; padding-bottom: 0.52rem; }
+.sevicelist ul li .li_box ul.l3 li{ float: left; width: 3.68rem; height: 2.2rem; overflow: hidden; margin-right: 0.54rem; }
+.sevicelist ul li .li_box ul.l3 li:last-child{ margin-right: 0; }
+.sevicelist ul li .li_box ul.l3 li img{ width: 100%; height: 100%; display: block; }
+.sevicelist ul li .li_box ul.l3 li:hover img{ opacity: 0.8; }
+.sevicelist2{ background: #f7f7f7; padding-bottom: 0.52rem; }
+.sevicelist2 h3{ font-size: 30px; line-height: 30px; color: #333; text-align: center; font-weight: 600; padding-top: 0.5rem; padding-bottom: 0.2rem; }
+.sevicelist2 ul.list {
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  width: 14rem; 
+  margin: 0 auto; 
+  background: url(../images/c_bg3.jpg) no-repeat; 
+  background-size: cover;
+}
+.sevicelist2 ul.list li {
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  width: 25%;
+  height: 2.2rem;
+  background-color: rgba(51, 51, 51, 0.1);
+  transition: background-color 0.3s ease 0s;
+  -webkit-transition: background-color 0.3s ease 0s;
+  -moz-transition: background-color 0.3s ease 0s;
+  -ms-transition: background-color 0.3s ease 0s;
+}
+.sevicelist2 ul.list li:hover {
+  background-color: #b41d24;
+}
+.sevicelist2 ul.list li:hover h4:before {
+  background-color: #ffffff;
+}
+.sevicelist2 ul.list li img {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  margin: 0.3rem auto 0.12rem;
+  border: 2px solid #b41d24;
+}
+.sevicelist2 ul.list li h4 {
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0.15rem;
+}
+.sevicelist2 ul.list li h4:before {
+  content: '';
+  width: 2.78rem;
+  height: 1px;
+  background-color: #747474;
+  position: absolute;
+  left: 50%;
+  bottom: -0.08rem;
+  margin-left: -1.39rem;
+  z-index: 2;
+}
+.sevicelist2 ul.list li p {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 30px;
+  text-align: center;
+}
 
 
 
 
+/*核心团队*/
+.team_box .tbtop{ width: 14rem; margin: 0 auto; background: #fff; padding: 0.3rem; }
+.team_box .tbtop .tbtoplf{ float: left; width: 6.6rem; height: 3.94rem; }
+.team_box .tbtop .tbtoprg{ float: left; width: 6.5rem; height: 3.24rem; box-sizing: border-box; border-right: 1px solid #b41d23; border-top: 1px solid #b41d23; border-bottom: 1px solid #b41d23; margin-top: 0.36rem; padding: 0.6rem; font-size: 0.16rem; line-height: 0.36rem; color: #333; }
+/*pc*/
+.team_box .tbtoplf .slideBox{ float: left; width:6.6rem; height:3.94rem; overflow:hidden; position:relative; }
+.team_box .tbtoplf .slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+.team_box .tbtoplf .slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.team_box .tbtoplf .slideBox .hd ul li{ float:left; margin-right:0.12rem; width:10px; height:10px; border-radius: 100%; background:#fff; cursor:pointer; }
+.team_box .tbtoplf .slideBox .hd ul li.on{ border-radius: 100%; background:#b41d24; }
+.team_box .tbtoplf .slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.team_box .tbtoplf .slideBox .bd li{ zoom:1; vertical-align:middle; }
+.team_box .tbtoplf .slideBox .bd img{ width:6.6rem; height:3.94rem; display:block;  }
+/* 下面是前/后按钮代码 */
+.team_box .tbtoplf .slideBox .prev{ position:absolute; right:3%; top:50%; margin-top:-0.25rem; display:block; width:0.22rem; height:0.5rem; background:url(../images/jtrg_1.png) no-repeat; background-size: 0.22rem 0.5rem; }
+.team_box .tbtoplf .slideBox .next{ position:absolute; left:3%; top:50%; margin-top:-0.25rem; display:block; width:0.22rem; height:0.5rem; background:url(../images/jtlf_1.png) no-repeat; background-size: 0.22rem 0.5rem; }
+.team_box .tbtoplf .slideBox .prev:hover{ background:url(../images/jtrg_2.png) no-repeat; background-size: 0.22rem 0.5rem; }
+.team_box .tbtoplf .slideBox .next:hover{ background:url(../images/jtlf_2.png) no-repeat; background-size: 0.22rem 0.5rem; }
+/*mobile*/
+.team_box .tbtoplf .swiper-container {
+	display: none;
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+.team_box .tbtoplf .swiper-slide {
+  	text-align: center;
+  	font-size: 18px;
+  	background: #fff;
+  	/* Center slide text vertically */
+  	display: -webkit-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+  	-webkit-box-pack: center;
+  	-ms-flex-pack: center;
+  	-webkit-justify-content: center;
+  	justify-content: center;
+  	-webkit-box-align: center;
+  	-ms-flex-align: center;
+  	-webkit-align-items: center;
+  	align-items: center;
+}
+.team_box .tbtoplf .swiper-slide img{ width: 100%; height: 100%; display: block; }
 
-
+.team_box .tbbot ul li{ position: relative; float: left; width: 3.34rem; height: 4.32rem; margin-right: 0.21rem; margin-top: 0.21rem; overflow: hidden; }
+.team_box .tbbot ul li:nth-child(4n){ margin-right: 0; }
+.team_box .tbbot ul li .pic{ width: 100%; height: 3.34rem; overflow: hidden; }
+.team_box .tbbot ul li .pic img{ width: 100%; height: 100%; display: block; }
+.team_box .tbbot ul li .txt1 p.p1{ width: 100%; height: 0.98rem; overflow: hidden; background: #fff; padding: 0.06rem 0.2rem; font-size: 16px; line-height: 32px; color: #333; }
+.team_box .tbbot ul li .txt1 p.p1 b{ font-size: 18px; line-height: 32px; color: #333; font-weight: 600; padding-right: 0.15rem; }
+.team_box .tbbot ul li .txt2{ position: absolute; top: 4.32rem; left: 0; width: 100%; background: #fff; box-sizing: border-box; padding: 0 0.2rem; }
+.team_box .tbbot ul li .txt2 p.p1{ width: 100%; height: 0.98rem; overflow: hidden; background: #fff; padding: 0.06rem 0; font-size: 16px; line-height: 32px; color: #333; }
+.team_box .tbbot ul li .txt2 p.p1 em{ font-size: 16px; line-height: 32px; color: #b41d24; }
+.team_box .tbbot ul li .txt2 p.p1 b{ font-size: 18px; line-height: 32px; color: #b41d24; font-weight: 600; padding-right: 0.15rem; }
+.team_box .tbbot ul li .txt2 .line3{ width: 100%; height: 1px; background: #b41d24; display: block; margin: 0 auto; }
+.team_box .tbbot ul li .txt2 p.p2{ font-size: 15px; line-height: 28px; color: #333; }
+.team_box .tbbot ul li .btn{ position: absolute; top: 4.32rem; right: 0.21rem; display: flex; justify-content: center; align-items: center; text-align: center; width: 0.58rem; height: 0.58rem; background: #b41d24; font-size: 16px; line-height: 0.24rem; color: #fff; }
+.team_box .tbbot ul li:hover .txt2{ transition: all 0.25s ease-in 0.2s; position: absolute; top: 2.12rem; left: 0; }
+.team_box .tbbot ul li:hover .btn{ transition: all 0.5s ease-in 0.2s; position: absolute; top: -0.29rem; right: 0.21rem; }
+.team_box .tbbot ul li:hover{ -moz-box-shadow:2px 2px 5px #ddd; -webkit-box-shadow:2px 2px 5px #ddd; box-shadow:2px 2px 5px #ddd; }
+.team_box .tbbot a.loadmore{ width: 127px; line-height: 39px; display: block; margin: 0.43rem auto 0.72rem; box-sizing: border-box; border: 1px solid #b41d24; font-size: 14px; line-height: 37px; color: #b41d24; text-align: center; }
+.team_box .tbbot a.loadmore:hover{ background: #b41d24; color: #fff; }
+.team_box .tbbot ul li .btn2{ display: none; }
 
 
 
 @media (max-width: 1280px){
-	.pagetop{ width: 90%; padding: 0; }
+	.pagetop{ width: 95%; padding: 0; }
 	.pagetop .pagetit .pagetitlf{ float: none; }
 	.pagetop .pagetit .pagetitrg{ float: none; width: 100%; height: 36px; margin-top: 10px; }
 	.pagetop .pagetit .pagetitlf em,.pagetop .pagetit .pagetitlf span{ font-size: 18px; line-height: 20px; }
@@ -250,30 +428,31 @@
 	.pagetop .pageselect .pagesel span{ float: none; font-size: 16px; line-height: 20px; }
 	.pagetop .pageselect .pagesel ul{ float: none; margin-top: 10px; margin-bottom: 5px; }
 	.pagetop .pageselect .pagesel ul li{ font-size: 16px; line-height: 26px; }
-	.pagebot ul{ width: 90%; margin: 10px auto 0; }
+	.pagebot ul{ width: 95%; margin: 10px auto 0; }
 	.pagebot ul li{ width: 33%; height: auto; margin-right: 0.5%; }
 	.pagebot ul li:nth-child(4n){ margin-right: 0.5%; }
 	.pagebot ul li:nth-child(3n){ margin-right: 0; }
 	.pagebot ul li .pic{ width: 100%; height: 6rem; overflow: hidden; }
 	.pagebot .loadmore{ width: 20%; }
-	.pagebot2{ width: 90%; }
+	.pagebot2{ width: 95%; }
 	.lift-nav ul{ display: none; }
 	.lift-target .ti{ float: none; border-left: none; padding-left: 0; margin-left: 0; }
-	.lift-target .ti .pic{ width: 90%; height: auto; margin: 0 auto; overflow: hidden; }
-	.pagebot2 .pagecon p{ width: 90%; margin: 0 auto; }
+	.lift-target .ti .pic{ width: 95%; height: auto; margin: 0 auto; overflow: hidden; }
+	.pagebot2 .pagecon p{ width: 95%; margin: 0 auto; }
 	.pagebot2 h3{ font-size: 18px; }
 	.pagebot2 .pagecon h4{ font-size: 16px; padding: 20px 0; }
-	.conbox1{ width: 90%; }
+	.conbox1{ width: 95%; }
 	.newslist1 ul.list1 li{ height: 2.4rem; }
 	.newslist1 ul.list1 li .pic{ height: 2.4rem; }
 	.newslist1 ul.list1 li .txt{ width: 63%; }
 	.newslist1 ul.list1 li .date{ width: 11.51%; }
 	.newslist1 ul.list1 li .txt p{ display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     .newslist1 ul.list1 li .txt .more{ background: none; }
-	.newslist2 ul.list2 li .txt p{ font-size: 14px; line-height: 26px; color: #666; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+	.newslist2 ul.list2 li .txt p{ font-size: 14px; line-height: 26px; color: #666; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; }
 	.pagenav ul li.on a{ border-bottom: none; }
 	.newslist2 ul.list2 li .txt .more{ display: none; }
-	.prevnext2{ width: 90%; }
+	.newslist2 ul.list2 li .txt h3{ font-size: 16px; }
+	.prevnext2{ width: 95%; }
 	/* 商学院人员详情 */
 	.per_con{ width: 100%; }
 	.per_con .per_conlf,.per_con .per_conrg{ float: none; }
@@ -283,6 +462,51 @@
 	.per_con .per_conrg .per_conrgbot ul.perlist li .limd{ width: 8rem; }
 	.per_con .per_conrg .per_conrgbot ul.perlist li .lirg{ width: 2.6rem; height: 36px; line-height: 36px; margin-top: 0; }
 	.per_con .per_conrg .per_conrgtop{ margin-bottom: 1rem; }
+	.per_con .per_conlf .per_conlftop .txt{ width: 12rem; }
+	/* 核心团队详情 */
+	.per_con .per_conlf .per_conlftop .txt ul.bot li{ width: 2rem; }
+	.per_con .per_conlf .per_conlftop .txt ul.bot li .pic{ width: 2rem; height: 2rem; margin-left: 0; }
+	.per_conlfbot ul.abcase{ margin-top: 0.8rem; }
+	.per_conlfbot ul.abcase li{ width: 32%; margin-right: 2%; }
+	.per_conlfbot ul.abcase li .pic{ height: 4.18rem; }
+	.per_conlf a.loadmore{ background: none; margin-bottom: 1rem; color: #b31e23; }
+	/*服务*/
+	.con_box4 .bl3{ font-size: 22px; }
+	.con_box4 .re3{ font-size: 20px; }
+	.sevicelist2 ul.list li h4 {
+	    font-size: 16px;
+	    line-height: 25px;
+	  }
+	.sevicelist2 ul.list li p {
+	    font-size: 14px;
+	    line-height: 25px;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	  }
+  .sevicelist2 ul.list li img {
+    margin: 0.2rem auto 0.12rem;
+  }
+  /*核心团队*/
+  .team_box .tbtop{ width: 100%; }
+  .team_box .tbtop .tbtoplf{ width: 100%; height: auto; }
+  .team_box .tbtoplf .slideBox{ display: none; }
+  .team_box .tbtoplf .swiper-container{ display: block; }
+  .team_box .tbtoplf .swiper-pagination-bullet{ background: #fff !important; opacity: 1; }
+  .team_box .tbtoplf .swiper-pagination-bullet-active{ background: #b41d24 !important; }
+  .team_box .tbtoplf .swiper-container{ height: 8rem; margin-bottom: 0.5rem; }
+  .team_box .tbtop .tbtoprg{ font-size: 16px; line-height: 36px;  }
+  .team_box .tbtop .tbtoprg{ float: none; width: 100%; height: auto; border: none; }
+  .team_box .tbbot ul li{ width: 32%; margin-right: 2%; }
+  .team_box .tbbot ul li:nth-child(3n){ margin-right: 0; }
+  .team_box .tbbot ul li:nth-child(4n){ margin-right: 2%; }
+  .team_box .tbbot ul li{ height: auto; background: #fff; }
+  .team_box .tbbot ul li .pic{ height: 4.32rem; }
+  .team_box .tbbot ul li .txt1{ display: none; }
+  .team_box .tbbot ul li .txt2{ display: block; position: unset; padding: 0 0.5rem; }
+  .team_box .tbbot ul li .txt2 p.p1{ height: auto; }
+  .team_box .tbbot ul li .btn{ display: none; }
+  .team_box .tbbot ul li .btn2{ display: block; width: 50%; height: 28px; display: block; margin: 0.5rem auto; box-sizing: border-box; border: 1px solid #b41d24; font-size: 16px; line-height: 26px; text-align: center; color: #b41d24; }
 }
 
 
@@ -304,18 +528,52 @@
 	.newslist1 ul.list1 li .txt{ width: 67%; border-right: none; padding-right: 2%; }
 	.newslist1 ul.list1 li .txt .more{ display: none; }
 	.newslist1 ul.list1 li .date{ display: none; }
-	.newslist2 ul.list2{ width: 90%; margin: 1rem auto; }
+	.newslist2 ul.list2{ width: 100%; margin: 1rem 0; }
 	.newslist2 ul.list2 li{ float: none; width: 100%; margin-bottom: 0.6rem; }
 	.newslist2 ul.list2 li{ height: 3.8rem; }
 	.news_con h3{ font-size: 18px; }
 	/* 商学院人员详情 */
 	.per_con{ padding: 5%; }
-	.per_con .per_conlf .per_conlftop .pic{ float: none; width: 90%; height: 13rem; margin: 0.3rem auto; }
+	.per_con .per_conlf .per_conlftop .pic{ float: none; width: 95%; height: 13rem; margin: 0.3rem auto; }
 	.per_con .per_conlf .per_conlftop .txt .line1{ width: 30%; }
 	.per_con .per_conlf .per_conlftop .txt{ float: none; width: 100%; }
 	.per_conlfbot .title{ margin: 1.48rem 0; }
 	.per_con .per_conrg .per_conrgtop .yzm img{ width: 35%; }
 	.per_con .per_conrg .per_conrgbot ul.perlist li .lirg{ width: 75px; }
+	/* 核心团队详情 */
+	.conbox1 .bl2{ font-size: 24px; }
+	.conbox1 .re2{ font-size: 22px; }
+	.per_con .per_conlf .per_conlftop .txt h4{ font-size: 22px; }
+	.per_con .per_conlf .per_conlftop .txt ul.top li{ float: none; width: 100%; }
+	.per_con .per_conlf .per_conlftop .txt ul.bot li{ width: 6rem; margin-right: 1rem; }
+	.per_con .per_conlf .per_conlftop .txt ul.bot li .pic{ width: 100%; height: 6rem; }
+	.per_conlfbot ul.abcase li{ float: none; width: 100%; }
+	.per_conlfbot ul.abcase li .pic{ height: 8.18rem; }
+	/*服务*/
+	.con_box4{ width: 95%; }
+	.con_box4 .bl3{ display: none; }
+	.sevicelist ul li .li_box{ width: 95%; background: none; }
+	.sevicelist ul li .li_box .bl4,.sevicelist ul li .li_box .re4{ font-size: 1rem; }
+	.sevicelist ul li .li_box ul.l3 li{ width: 50%; height: 5rem; }
+	.sevicelist ul li .li_box ul.l3 li:last-child{ display: none; }
+	.sevicelist ul li .li_box ul.l3 li:nth-child(2n){ margin-right: 0; }
+	.sevicelist2 ul.list{ width: 95%; }
+	.sevicelist2 ul.list li{ width: 50%; height: 5.2rem; }
+	.sevicelist2 ul.list li img{ width: 1.8rem; height: 1.8rem; }
+	.sevicelist2 h3{ font-size: 22px; }
+	/*核心团队*/
+	.conbox1{ width: 95%; margin: 0 auto; }
+	.team_box .tbbot ul li{ width: 49%; margin-right: 2%; margin-top: 0.5rem; }
+	.team_box .tbbot ul li:nth-child(3n){ margin-right: 2%; }
+	.team_box .tbbot ul li:nth-child(2n){ margin-right: 0; }
+	.team_box .tbbot ul li:nth-child(4n){ margin-right: 0; }
+    .team_box .tbbot ul li .pic{ height: 7rem; }
+    .team_box .tbbot ul li .txt2{ top: 7rem; }
+    .team_box .tbbot ul li .pic {
+	    height: 7rem;
+	}
+
+
 }
 
 
