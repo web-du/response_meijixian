@@ -78,6 +78,22 @@
     left: 0;
     top: 0;
     z-index: 9999;
+    .trans(background-color,0.3s,ease,0s);
+    &.on{
+        background: none;
+        .bg(@wc);
+        .con{
+            .nav-search{
+                >ul{
+                    >li{
+                        a{
+                            color: @fc;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .con{
         width: 14rem;
         height: 100%;
@@ -251,7 +267,7 @@
                 width: 25%;
                 height: 2.2rem;
                 background-color: rgba(51,51,51,0.8);
-                .trans(background-color,0.3s,ease,0s);
+                .trans(background-color,0.5s,ease,0s);
                 &:hover{
                     .bg(@nc);
                     h4{
@@ -406,7 +422,7 @@
                             bottom: -0.01rem;
                         }
                         img{
-                            .tran(scale(1.2,1.2));
+                            .tran(scale(1.05,1.05));
                         }
                     }
                     &:nth-child(1),&:nth-child(3){
@@ -478,6 +494,8 @@
         .swiper-slide{
             .product-box{
                 .pr;
+                width: 100%;
+                overflow: hidden;
                 &:hover{
                     >img{
                         -webkit-filter: blur(0px); /* Chrome, Opera */
@@ -508,6 +526,7 @@
                 >img{
                     .db;
                     width: 100%;
+                    .tran(scale(1.01,1.01));
                     -webkit-filter: blur(2px); /* Chrome, Opera */
                     -moz-filter: blur(2px);
                         -ms-filter: blur(2px);    
@@ -628,6 +647,7 @@
         .gallery-top{
             height: 100%;
             padding: 0 0.7rem;
+            .pr;
             .swiper-wrapper{
                 width: 12.6rem;
                 margin: 0 auto;
@@ -671,35 +691,39 @@
                                     }
                                 }
                             }
-                            .to-op{
-                                text-align: right;
-                                h2{
-                                    .dfcc;
-                                    em{
-                                        font-size:0.36rem;
-                                        color: @nc;
-                                        text-transform: uppercase;
-                                        margin-right: 0.12rem;
-                                    }
-                                    span{
-                                        font-size:0.32rem;
-                                        color: #000;
-                                    }
-                                }
-                                >span{
-                                    width: 1.28rem;
-                                    height: 0.4rem;
-                                    line-height: 0.4rem;
-                                    text-align: center;
-                                    color: @nc;
-                                    font-size: 16px;
-                                    border:1px solid @nc;
-                                    .dib;
-                                    margin-top: 0.25rem;
-                                }
-                            }
                         }
                     }
+                }
+            }
+            .to-op{
+                text-align: right;
+                .pa;
+                right:0.64rem;
+                top: 2.4rem;
+                z-index: 3;
+                h2{
+                    .dfcc;
+                    em{
+                        font-size:0.35rem;
+                        color: @nc;
+                        text-transform: uppercase;
+                        margin-right: 0.12rem;
+                    }
+                    span{
+                        font-size:0.32rem;
+                        color: #000;
+                    }
+                }
+                >span{
+                    width: 1.28rem;
+                    height: 0.4rem;
+                    line-height: 0.4rem;
+                    text-align: center;
+                    color: @nc;
+                    font-size: 16px;
+                    border:1px solid @nc;
+                    .dib;
+                    margin-top: 0.25rem;
                 }
             }
             .swiper-button-next{
@@ -794,6 +818,15 @@
                         border:1px solid #ddd;
                         .bg(@wc);
                         flex-shrink: 0;
+                        &:hover{
+                            border-color: @nc;
+                            p{
+                                color: @nc;
+                            }
+                            h2{
+                                color: @nc;
+                            }
+                        }
                         img{
                             width: 4.3rem;
                             .db;
@@ -1875,6 +1908,7 @@
                         .db;
                         width: 2.62rem;
                         height: 1.98rem;
+                        margin: 0 auto;
                     }
                     .mask{
                         .pa;
@@ -2079,6 +2113,7 @@
                     }
                 }
                 .parter{
+                    padding: 0 0.50rem;
                     .swiper-button-next,.swiper-button-prev{
                         margin-top: -40px;
                         width: 20px;
@@ -2171,22 +2206,14 @@
     .index-team{
         .con-box{
             .gallery-top{
-                .swiper-wrapper{
-                    .img-box{
-                        a{
-                            .details{
-                                .to-op{
-                                    h2{
-                                        em{
-                                            font-size: 0.32rem;
-                                            margin-right: 0.06rem;
-                                        }
-                                        span{
-                                            font-size: 0.3rem;
-                                        }
-                                    }
-                                }
-                            }
+                .to-op{
+                    h2{
+                        em{
+                            font-size: 0.32rem;
+                            margin-right: 0.06rem;
+                        }
+                        span{
+                            font-size: 0.3rem;
                         }
                     }
                 }
@@ -2216,6 +2243,7 @@
     .header{
         height: 1.2rem;
         .con{
+            width:16rem;
             .nav-search{
                 >ul{
                     >li{
@@ -2234,6 +2262,7 @@
     }
     .index-customized{
         .con-box{
+            width:16rem;
             >p{
                 font-size: 14px;
                 max-width: 12rem;
@@ -2297,6 +2326,8 @@
     }
     .index-team{
         .con-box{
+            width:16rem;
+            margin-left: -8rem;
             .gallery-top{
                 .swiper-wrapper{
                     .img-box{
@@ -2311,22 +2342,23 @@
                                         }
                                     }
                                 }
-                                .to-op{
-                                    >span{
-                                        height: 30px;
-                                        line-height: 28px;
-                                        font-size: 14px;
-                                    }
-                                    h2{
-                                        em{
-                                            font-size: 14px;
-                                        }
-                                        span{
-                                            font-size: 14px;
-                                        }
-                                    }
-                                }
+                                
                             }
+                        }
+                    }
+                }
+                .to-op{
+                    >span{
+                        height: 30px;
+                        line-height: 28px;
+                        font-size: 14px;
+                    }
+                    h2{
+                        em{
+                            font-size: 14px;
+                        }
+                        span{
+                            font-size: 14px;
                         }
                     }
                 }
@@ -2358,6 +2390,46 @@
     }
     .index-product .swiper-container .swiper-button-next, .index-product .swiper-container .swiper-button-prev{
         .dn;
+    }
+    .about-us{
+        .fir-about{
+            width:16rem;
+            .company-detail{
+                .con{
+                    >h2{
+                        left: 5.1rem;
+                    }
+                    .text-box{
+                        .text{
+                            width: 9.65rem;
+                            p{
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                    .list{
+                        li{
+                            p{
+                                span{
+                                    &:before{
+                                        left: -0.2rem;
+                                    }
+                                    &:after{
+                                        right: -0.2rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    .index-partner{
+        .con-box{
+            width: 16rem;
+        }
     }
 }
 @media(max-width:1023px){
@@ -2472,16 +2544,8 @@
                 .dn;
             }
             .gallery-top{
-                .swiper-wrapper{
-                    .img-box{
-                        a{
-                            .details{
-                                .to-op{
-                                    .dn;
-                                }
-                            }
-                        }
-                    }
+                .to-op{
+                    .dn;
                 }
                 .swiper-button-next,.swiper-button-prev{
                     width: 16px;
@@ -2559,8 +2623,13 @@
 @media(max-width:991px){
 
 }
-@media (min-width: 768px){
-
+@media (max-width: 768px){
+    .about-us .fir-about .company-detail .con .text-box .img-box{
+        .dn;
+    }
+    .about-us .fir-about .company-detail .con .text-box .text{
+        width: 100%;
+    }
 }
 
 @media(max-width:767px){

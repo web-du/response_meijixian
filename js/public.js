@@ -76,6 +76,14 @@ $(function(){
         }else{
             $(".Totop").hide();
         }
+
+        if($(this).scrollTop()>100){
+            $(".header").addClass("on");
+            $(".menu-handler .burger").css("background-color","#000");
+        }else{
+            $(".header").removeClass("on");
+            $(".menu-handler .burger").css("background-color","#fff");
+        }
     })
     $(".Totop").click(function(){
         $('html,body').animate({
