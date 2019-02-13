@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>核心团队详情</title>
+    <title>核心团队</title>
     <meta name="keywords" content="美际线" />
     <meta name="description" content="美际线" />
     <link rel="stylesheet" type="text/css" href="css/animate.min.css">
@@ -49,9 +49,9 @@
         <div class='right'>
             <div class='nav-search clearfix'>
                 <ul class='fl clearfix'>
-                    <li class='fl'><a href='#' class='on'>首页</a></li>
+                    <li class='fl'><a href='#'>首页</a></li>
                     <li class='fl'><a href='#'>关于我们</a></li>
-                    <li class='fl'><a href='#'>核心团队</a></li>
+                    <li class='fl'><a href='#' class='on'>核心团队</a></li>
                     <li class='fl'><a href='#'>案例展示</a></li>
                     <li class='fl'><a href='#'>服务内容</a></li>
                     <li class='fl'><a href='#'>新闻资讯</a></li>
@@ -130,7 +130,10 @@
 <!--content开始-->
 <div class="content">
     <!-- banner -->
-    <div class='page-banner'><img src="images/pagebannar3.jpg" alt=""></div>
+    <div class='page-banner'>
+        <img src="images/pagebannar3.jpg" class='pc'>
+        <img src="images/pagebannar3_mo.jpg" class='mo'>
+    </div>
     <div class="casebg1">
         <div class="conbox1 conbox">
             <h2 class="clearfix"><span class="bl2">our team</span><span class="re2">核心团队</span></h2>
@@ -347,7 +350,7 @@
                     </li>
                     <li>
                         <img src="images/img-40.png" >
-                        <p>0755-36648736</p>
+                        <p>MJX@126.com</p>
                     </li>
                 </ul>
                 <ul class='nav'>
@@ -399,21 +402,21 @@
     jQuery(".team_box .tbtoplf .slideBox").slide({mainCell:".bd ul",autoPlay:true});
     //mobile
     var swiper = new Swiper('.team_box .tbtoplf .swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      autoplay: {
-        delay: 3000,
-        stopOnLastSlide: false,
-        disableOnInteraction: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
         },
     });
 </script>

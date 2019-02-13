@@ -89,4 +89,14 @@ $(function(){
         $('html,body').animate({
             scrollTop:0},300);
     })
+
+
+
+    //点击免费咨询
+    $(".new-zx").click(function(){
+        $(".new-zx-box").show();
+    })
+    $(".new-zx-box .zy>img").click(function(){
+        $(".new-zx-box").hide();
+    })
 })

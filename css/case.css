@@ -1,6 +1,9 @@
 /*案例*/
 .page-banner{ width: 100%; height: auto; overflow: hidden; }
 .page-banner img{ width: 100%; height: 100%; display: block; }
+.page-banner img.mo{
+	display: none;
+}
 .casebg1{ width: 100%; /*height: 17.57rem;*/ background: url(../images/c_bg1.jpg) no-repeat; background-size: cover; }
 .pagetop{ padding: 0 1.04%; width: 73%; margin: 0 auto; box-sizing: border-box; }
 .pagetop .pagetit{ padding-top: 0.52rem; padding-bottom: 0.45rem; }
@@ -418,6 +421,161 @@
 
 
 
+/*联系我们*/
+.about-us .fir-about .big-title{ width: 14rem; margin: 0 auto 0.35rem; }
+.about-us .fir-about2{ width: 100%; padding-bottom: 0; }
+.about-us .company-detail2{ width: 100%; height: auto; overflow: hidden; }
+.about-us .company-detail2 img{ width: 100%; height: 100%; display: block; }
+.about-us .fir-about .honor{ margin-top: 0; }
+.about-us .fir-about .honor2{ background: url(../images/c_bg9.jpg) no-repeat; background-size: cover; padding-top: 0.8rem; }
+.about-us .fir-about .honor2 .title{ font-size: 0.4rem; }
+.about-us .fir-about .honor2 .title em{ font-size: 0.4rem; color: #b41d24; font-weight: 600; }
+.honor2 .slideTxtBox{ width:14rem; margin: 0 auto; padding-bottom: 0.74rem; text-align:left;  }
+.honor2 .slideTxtBox .hd{ height:0.62rem; position:relative; }
+.honor2 .slideTxtBox .hd ul{ float:left; position:absolute; left:0; top:-1px; height:0.62rem; }
+.honor2 .slideTxtBox .hd ul li{ float:left; width: 1.64rem; height: 0.62rem; box-sizing: border-box; border: 1px solid #b41d24; font-size: 16px; line-height: 0.62rem; color: #333; background: #f3eee5; text-align: center; margin-right: 0.14rem; cursor:pointer;  }
+.honor2 .slideTxtBox .hd ul li.on{ background:#b41d24; color: #fff; }
+.honor2 .slideTxtBox .bd ul .con{ padding:0.36rem 0.4rem 1.4rem 0.4rem; background: rgba(255,255,255,0.5); zoom:1; margin-top: 0.16rem; margin-bottom: 0.44rem; }
+.honor2 .slideTxtBox .bd ul .con em{ font-size: 14px; line-height: 26px; color: #333; font-weight: 600; }
+.honor2 .slideTxtBox .bd ul .con p{ font-size: 14px; line-height: 26px; color: #333; }
+.honor2 .slideTxtBox .bd ul .btn{ cursor: pointer; margin: 0 auto; padding-left: 4%; width: 2.48rem; height: 0.58rem; font-size: 20px; line-height: 0.58rem; color: #333; background: #fff url(../images/btn.png) no-repeat 86% center; background-size: 0.35rem 0.35rem; border-radius: 0.3rem; -moz-box-shadow:5px 5px 5px #999999; -webkit-box-shadow:5px 5px 5px #999999; box-shadow:5px 5px 5px #999999; }
+.honor2 .slideTxtBox .bd ul .btn:hover{ color: #b41d24; }
+.about-us .company-detail3{ position: relative; width: 100%; height: auto; overflow: hidden; }
+.about-us .company-detail3 img{ width: 100%; height: 100%; display: block; }
+.company-detail3 .conbox{ width: 14rem; height: 0; position: absolute; top: 0; left: 50%; margin-left: -7rem; }
+.company-detail3 .conbox ul{ position: absolute; left: 0; top: 0; z-index: 99; background: #fff; width: 3.78rem; box-sizing: border-box; padding: 0.3rem; }
+.company-detail3 .conbox ul li h4{ font-size: 0.18rem; line-height: 0.28rem; color: #b41d24; font-weight: 600; }
+.company-detail3 .conbox ul li p{ font-size: 0.16rem; line-height: 0.24rem; color: #333; padding-bottom: 0.2rem; padding-top: 0.05rem; }
+.company-detail3 .conbox ul li.last{ border-top: 1px solid #b41d24; }
+.company-detail3 .conbox ul li.last h4{ padding-top: 0.2rem; }
+
+
+/* 免费咨询 */
+.footer{
+	position: relative;
+}
+.new-zx{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 0;
+	bottom: 65px;
+	background-color: #b31e23;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	z-index: 9;
+	cursor: pointer;
+}
+.new-zx-box{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 10;
+	width: 100%;
+	background-color: rgba(0,0,0,0.9);
+	padding: 0.3rem 0;
+	display: none;
+}
+.new-zx-box .zy{
+	width: 14rem;
+	margin: 0 auto;
+	position: relative;
+}
+.new-zx-box .zy .text{
+	margin-left: 0.65rem;
+}
+.new-zx-box .zy .text h1{
+	font-size: 0.4rem;
+	font-weight: bold;
+	color: #fff;
+}
+.new-zx-box .zy .text p{
+	font-size: 20px;
+	line-height: 26px;
+	color: #b31e23;
+}
+.new-zx-box .zy .text img{
+	margin: 0.1rem 0;
+	width: 3.8rem;
+	height: 0.3rem;
+}
+.new-zx-box .zy ul{
+	margin-right: 0.8rem;
+	width: 8.2rem;
+	margin-top: 0.1rem;
+}
+.new-zx-box .zy ul li{
+	width: 4rem;
+	margin-right: 0.2rem;
+	margin-bottom: 0.15rem;
+}
+.new-zx-box .zy ul li:nth-child(2n+2){
+	margin-right: 0;
+}
+.new-zx-box .zy ul li>input{
+	display: block;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	font-size: 18px;
+	color: #333;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 0 0.1rem;
+}
+.new-zx-box .zy ul li .box{
+	position: relative;
+	width: 2.4rem;
+	height: 45px;
+	line-height: 45px;
+	font-size: 18px;
+	color: #333;
+}
+.new-zx-box .zy ul li .box input{
+	display: block;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	font-size: 18px;
+	color: #333;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 0 0.1rem;
+}
+.new-zx-box .zy ul li .box img{
+	position: absolute;
+	width: 1.1rem;
+	height: 45px;
+	right: 0;
+	top: 0;
+	z-index: 3;
+}
+.new-zx-box .zy ul li span{
+	width: 1.4rem;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	background-color: #b41e23;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.new-zx-box .zy>img{
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 3;
+	cursor: pointer;
+}
+
 @media (max-width: 1280px){
 	.pagetop{ width: 95%; padding: 0; }
 	.pagetop .pagetit .pagetitlf{ float: none; }
@@ -507,8 +665,47 @@
   .team_box .tbbot ul li .txt2 p.p1{ height: auto; }
   .team_box .tbbot ul li .btn{ display: none; }
   .team_box .tbbot ul li .btn2{ display: block; width: 50%; height: 28px; display: block; margin: 0.5rem auto; box-sizing: border-box; border: 1px solid #b41d24; font-size: 16px; line-height: 26px; text-align: center; color: #b41d24; }
+	
+  /*联系我们*/
+  .about-us .fir-about .big-title{ width: 90%; font-size: 20px; }
+  .about-us .fir-about .big-title em{ font-size: 20px; }
+  .honor2 .slideTxtBox{ width: 96%; }
+  .honor2 .slideTxtBox .hd ul li{ width: auto; padding: 0 0.05rem; margin-right: 0; }
+  .honor2 .slideTxtBox .bd ul .btn{ background: #fff; text-align: center; padding-left: 0; }
+  .company-detail3 .conbox{ width: 100%; height: auto; position: unset; margin-left: 0; }
+  .company-detail3 .conbox ul{ width: 100%; height: auto; position: unset; }
+  .company-detail3 .conbox ul li h4{ font-size: 18px; line-height: 28px; }
+	.company-detail3 .conbox ul li p{ font-size: 16px; line-height: 24px; }
+	
+	.team_box .tbbot ul li:hover .txt2{
+		top: 4.32rem;
+		position: static;
+	}
+
+}
+@media(max-width:1024px){
+	.conbox1{
+		width: 16rem;
+	}
+	.pagenav ul li{
+		font-size: 18px;
+	}
+	.conbox1 h2{
+		font-size: 20px;
+	}
+	.new-zx-box .zy .text p{
+		font-size: 16px;
+	}
 }
 
+@media(max-width:1023px){
+	.new-zx{
+		display: none;
+	}
+	.new-zx-box{
+		display: none;
+	}
+}
 
 @media (max-width: 767px){
 	.pagebot ul li{ width: 49%; height: auto; margin-right: 2%; }
@@ -572,8 +769,63 @@
     .team_box .tbbot ul li .pic {
 	    height: 7rem;
 	}
+	
+	/*联系我们*/
+	.about-us .fir-about .honor2 .title,.about-us .fir-about .honor2 .title em{ font-size: 18px; }
+	.honor2 .slideTxtBox{ width: 90%; }
+	.honor2 .slideTxtBox .hd,.honor2 .slideTxtBox .hd ul{ height: 100px; }
+  	.honor2 .slideTxtBox .hd ul li{ width: auto; height: 30px; margin-bottom: 0.2rem; line-height: 30px; padding: 0 0.2rem; margin-right: 0.3rem; }
+  	.honor2 .slideTxtBox .bd ul .btn{ width: auto; height: 40px; line-height: 40px; background: #b41d24; color: #fff; text-align: center; padding-left: 0; }
+  
+	.page-banner img.pc{
+		display: none;
+	}
+	.page-banner img.mo{
+		display: block;
+	}
+}
 
 
+@media(max-width:480px){
+	.conbox1 .re2{
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.conbox1 .bl2{
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.con_box4 .re3{
+		font-size: 16px;
+	}
+	.con_box4 p{
+		font-size: 14px;
+		line-height: 25px;
+	}
+	.sevicelist ul li .li_box ul.l2 li{
+		font-size: 14px;
+	}
+	.sevicelist2 h3{
+		font-size: 18px;
+	}
+	.pagenav ul li{
+		font-size: 14px;
+	}
+	.newslist1 ul.list1 li .txt h3{
+		font-size: 16px;
+	}
+	.news_con p{
+		font-size: 14px;
+		line-height: 25px;
+	}
+	.honor2 .slideTxtBox .hd ul{
+		position: static;
+		height: auto;
+	}
+	.honor2 .slideTxtBox .bd ul .con p{
+		font-size: 12px;
+    line-height: 20px;
+	}
 }
 
 
